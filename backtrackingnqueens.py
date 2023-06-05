@@ -2,7 +2,9 @@
 
 # N - Queens
 
+# Caelan Neumann
 
+#Problem/Board
 def chess_board(n):
     #Create n x n board with underscores as place holders
     chess_board = [[0 for row in range(n)] for col in range(n)]
@@ -12,7 +14,7 @@ def chess_board(n):
 
     return chess_board
 
-
+#Constraint Check
 def check_move(chess_board, curr_row, curr_col, n):
     
     #check row behind
@@ -67,7 +69,7 @@ def backtracking_csp_nqueen(chess_board, col, n):
 
 if __name__ == '__main__':
     #initialize n 
-    n = 11
+    n = 8
     #blank n x n board
     board = chess_board(n)
     #start at the first column
